@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SettingsHistory {
+public struct SettingsHistory {
     
     static let kSound = "kSound"
     static let kMelody = "kMelody"
