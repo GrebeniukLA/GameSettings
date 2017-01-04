@@ -13,6 +13,8 @@ public struct SettingsHistory {
     static let kSound = "kSound"
     static let kMelody = "kMelody"
     
+    public init () {}
+    
     public func saveSoundOn (_ value: Bool) {
         UDWrapper.setBool(SettingsHistory.kSound, value: value)
     }
@@ -24,6 +26,7 @@ public struct SettingsHistory {
     public func loadMelodyState () -> Bool {
         return UDWrapper.getBool(SettingsHistory.kMelody, defaultValue: true)
     }
+    
     public func loadSoundState () -> Bool {
         return UDWrapper.getBool(SettingsHistory.kSound, defaultValue: true)
     }
